@@ -262,6 +262,6 @@ jobs:
           git config user.email "actions@github.com"
 
           git add .
-          git commit -m "functional | rel${{ github.run_number }}" || echo "No changes"
+          git commit -m "New Deployment on functional | rel${{ github.run_number }}" || echo "No changes"
 
           git push origin main
