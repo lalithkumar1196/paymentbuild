@@ -247,7 +247,7 @@ jobs:
         run: |
           IMAGE_TAG="rel${{ github.run_number }}"
 
-          cd payment-deployment/envs/regression
+          cd payment-deployment/envs/functional
 
           sed -i "s|tag:.*|tag: $IMAGE_TAG|g" values.yaml
 
